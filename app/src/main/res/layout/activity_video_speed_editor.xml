@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VideoSpeedEditorActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/premiumRed">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="20dp"
+            android:text="Video Speed Editor"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/menuImagevideospeededitor"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_baseline_more_vert_24" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <hb.xvideoplayer.MxVideoPlayerWidget
+                android:id="@+id/videoplayerspeededitor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.crystal.crystalrangeseekbar.widgets.CrystalSeekbar
+                android:id="@+id/crystalSeekbarspeededitor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp">
+
+                <TextView
+                    android:id="@+id/mintextviewspeededitor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="0.25x" />
+
+                <TextView
+                    android:id="@+id/maxtextviewspeededitor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:text="4.0x" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/exportBtnspeededitor"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:text="Export video" />
+
+            <!--            <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:id="@+id/crystalSeekbarspeededitor"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="30dp"-->
+            <!--                android:layout_marginLeft="30dp"-->
+            <!--                android:layout_marginTop="30dp"-->
+            <!--                android:layout_marginEnd="30dp"-->
+            <!--                android:layout_marginRight="30dp" />-->
+
+            <!--            <RelativeLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_margin="20dp">-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_alignParentStart="true"-->
+            <!--                    android:id="@+id/mintextviewspeededitor"-->
+            <!--                    android:layout_alignParentLeft="true"-->
+            <!--                    android:text="00" />-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_centerHorizontal="true"-->
+            <!--                    android:id="@+id/finalvaluetextviewspeededitor"-->
+            <!--                    android:text="20" />-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:id="@+id/maxtextviewspeededitor"-->
+            <!--                    android:layout_alignParentEnd="true"-->
+            <!--                    android:layout_alignParentRight="true"-->
+            <!--                    android:text="120" />-->
+
+            <!--            </RelativeLayout>-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
